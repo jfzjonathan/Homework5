@@ -16,13 +16,11 @@ a. First, import the .txt file into R so you can process it. Keep in mind this i
 
 ## Setting working directory where yop2016 resides
 
-getwd()
-setwd("C:\\Users\\jfzjonathan\\Desktop\\Doing Data Science\\Unit 5")
-unzip("Assignment5files.zip")
+require(RCurl)
 
 ## Importing the text files into a data frame and assigning it to variable df
 
-df <- data.frame(read.delim("yob2016.txt",sep = ";", header = FALSE))
+df <- data.frame(read.delim(text = getURL("https://raw.githubusercontent.com/jfzjonathan/Homework5/master/RawData/yob2016.txt"),header = FALSE,sep=";"))
 
 
 ## Naming the columns of the table
