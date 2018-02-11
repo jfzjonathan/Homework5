@@ -2,7 +2,9 @@
 title: "Assignment 5 - V2"
 author: "Jonathan Flores"
 date: "February 10, 2018"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ## Question 1
